@@ -22,6 +22,5 @@ export class AppComponent  {
   }
   countNum(array:number[], integer:number) {
     this.num = array.filter(x => x == integer).length;
-    console.log(this.num);
   }
 }
