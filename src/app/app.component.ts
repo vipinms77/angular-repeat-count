@@ -11,6 +11,7 @@ export class AppComponent  {
   integer:number;
   num: number;
   onClick(){
+    this.num = 0;
     console.log(this.numberString);
     if(this.numberString.trim()){
       this.array = this.numberString.split(',');
