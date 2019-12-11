@@ -14,10 +14,11 @@ export class AppComponent  {
     this.num = 0;
     if(this.numberString.trim()){
       this.array = this.numberString.split(',');
+      if(this.array.length > 0 && this.integer){
+        this.countNum(this.array,this.integer);
+      }
     }
-    if(this.array.length > 0 && this.integer){
-      this.countNum(this.array,this.integer);
-    }
+    
   }
   countNum(array:number[], integer:number) {
     this.num = array.filter(x => x == integer).length;
