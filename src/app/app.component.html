@@ -1,4 +1,13 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div>
+  <label for="numbers">Numbers<i> (Enter numbers seperated by comma.)</i></label><br>
+  <input type = "text" [(ngModel)]="numberString" name="numbers">
+</div>
+<br>
+<div>
+  <label for="integer">Integer</label><br>
+  <input type = "text" [(ngModel)]="integer" name="integer">
+</div>
+<div>
+  <br>
+  <button (click)="onClick()">Submit</button>
+</div>
