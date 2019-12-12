@@ -18,7 +18,6 @@ export class AppComponent  {
         this.countNum(this.array,this.integer);
       }
     }
-    
   }
   countNum(array:number[], integer:number) {
     this.num = array.filter(x => x == integer).length;
