@@ -13,7 +13,7 @@ export class AppComponent  {
   onClick(){
     this.num = 0;
     if(this.numberString.trim()){
-      this.array = this.numberString.split(',');
+      this.array = this.numberString.split(',').map(x => x.trim());
       if(this.array.length > 0 && this.integer){
         this.countNum(this.array,this.integer);
       }
